@@ -9,13 +9,11 @@ function removeIngredient(recipe, ingredient) {
 	return recipe;
 }
 function updateIngredient(recipe, ingredient, amounts) {
-
 	return addIngredient(recipe, ingredient, amounts); //helper function -same logic as addIngredient
 }
+
 function readRecipe(recipe) {
-	var amount; //create a local variable
-	for (var ingredient in recipe){ //key in object
-		console.log(ingredient);
-	 return	`this recipe calls for ${recipe[ingredient]}  of ${ingredient}`; //return value and key in statement
+	for (var ingredient in recipe) { //key in object
+		console.log("this recipe calls for " + recipe[ingredient] + " of " + ingredient); //return value and key in statement
  }
 }
